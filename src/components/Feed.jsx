@@ -1,28 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+class Feed extends React.Component{
+  render(){
 
-function Feed(props){
-
-
-// let needFood = setInterval(fullness, 50000);
-
-
-// function handleHunger(event){
-//   event.preventDefualt();
-//   props.
-//
-// }
-
-  return(
-    <div>
-      <button>Feed</button>
-    </div>
-  )
+    return(
+      <div>
+        <button onClick={this.props.feedTamagotchi}>Feed</button>
+      </div>
+    );
+  }
 }
 
-Feed.propTypes = {
-  onFeedTamagotchi: PropTypes.func
-}
-
+Feed.propTypes ={
+  feedTamagotchi: PropTypes.func
+};
 export default Feed;
