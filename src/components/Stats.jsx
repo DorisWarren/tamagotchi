@@ -23,7 +23,7 @@ class Stats extends React.Component{
     this.playWithTamagotchi = this.playWithTamagotchi.bind(this);
     this.makeTamagotchiSleep = this.makeTamagotchiSleep.bind(this);
   }
-
+// console.log(this.state.hunger);
   componentDidMount() {
     this.updateHungerTimer = setInterval(()=>
       this.updateHunger(),
